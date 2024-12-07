@@ -1,0 +1,63 @@
+{% extends 'Navbar/customernavbar.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block body %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order List</title>
+    <link rel="stylesheet" href="{% static 'css/customerlist.css' %}">
+</head>
+<body>
+    <div class="order-list">
+        <div class="order-item">
+            <img src="{% static 'images/Eggless-Black-forest-Pastry-recipe-1-500x500.jpg' %}" alt="Food Image" class="food-img">
+            <div class="item-details">
+                <h3>Black Forest Pastry</h3>
+                <p>Indulge in a mouthwatering pastry with rich layers of chocolate and delicate hints of cherry, known for its timeless taste and luscious appeal.</p>
+                <span class="price">$10.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Repeat .order-item for more items -->
+    </div>
+        <div class="order-list">
+        <div class="order-item">
+            <img src="{% static 'images/best-choco-lava-cake-recipe-ever-1200x900.jpg' %}" alt="Food Image" class="food-img">
+            <div class="item-details">
+                <h3>Choco Lava Cake</h3>
+                <p>Decadent and rich, this indulgent pastry is a chocolate lover's dream.</p>
+                <span class="price">$10.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Repeat .order-item for more items -->
+    </div>
+                <div class="order-list">
+        <div class="order-item">
+            <img src="{% static 'images/butterscotch-wirh-fresh-fruit-250x250.jpeg' %}" alt="Food Image" class="food-img">
+            <div class="item-details">
+                <h3>Cassatta Cake</h3>
+                <p>Desingn of cake is subject to change within time to time.</p>
+                <span class="price">$10.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Repeat .order-item for more items -->
+    </div>
+                        <div class="order-list">
+        <div class="order-item">
+            <img src="{% static 'images/RedVelvetCakehalfkg_341891f8-fc0d-431e-b574-98c3764c4e74.jpg' %}" alt="Food Image" class="food-img">
+            <div class="item-details">
+                <h3>Red Velvet</h3>
+                <p>A heavenly pound cake enveloped in a rich, velvety crimson, promising a delightful indulgence.</p>
+                <span class="price">$10.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Repeat .order-item for more items -->
+    </div>
+{% endblock %}
+</body>
+</html>

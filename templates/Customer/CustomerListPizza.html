@@ -1,0 +1,67 @@
+{% extends 'Navbar/customernavbar.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block body %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order List</title>
+    <link rel="stylesheet" href="{% static 'css/customerlist.css' %}">
+</head>
+<body>
+    <div class="order-list">
+        <div class="order-item">
+            <img src="{% static 'images/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg' %}" alt="Food Image" class="food-img">
+            <div class="item-details">
+                <h3>Double Cheese Margherita</h3>
+                <p>Loaded with extra cheese</p>
+                <span class="price">350/-</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Repeat .order-item for more items -->
+    </div>
+        <div class="order-list">
+        <div class="order-item">
+            <img src="{% static 'images/Menu5101-Cheese-Corn-Pizza.jpg.png' %}" alt="Food Image" class="food-img">
+            <div class="item-details">
+                <h3>Cheese & Corn</h3>
+                <p>Cheese and golden corn</p>
+                <span class="price">299/-</span>
+
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Repeat .order-item for more items -->
+    </div>
+                <div class="order-list">
+        <div class="order-item">
+            <img src="{% static 'images/Extra.jpg' %}" alt="Food Image" class="food-img">
+            <div class="item-details">
+                <h3>Veg Extravaganza</h3>
+                <p>Black olives onion capsicum tomato grilled mushroom golden corn jalapeno and extra cheese</p>
+                <span class="price">399/-</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Repeat .order-item for more items -->
+    </div>
+                        <div class="order-list">
+        <div class="order-item">
+            <img src="{% static 'images/991307.jpg' %}" alt="Food Image" class="food-img">
+            <div class="item-details">
+                <h3>Tripple Tango Pizza</h3>
+                <p>Jalapeno corn and red paprika</p>
+                <span class="price">359/-</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Repeat .order-item for more items -->
+    </div>
+
+{% endblock %}
+</body>
+</html>

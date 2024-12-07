@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 70;
+}
+
+.order-list {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.order-item {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item:hover {
+    background-color: #f0f0f0;
+}
+
+.food-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.item-details p {
+    margin: 0 0 10px;
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.add-to-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e64a19;
+}
